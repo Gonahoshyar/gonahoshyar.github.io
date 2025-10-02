@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/PortfolioTest/',
   title: 'My Portfolio',
   description: 'My VuePress Portfolio Site',
   themeConfig: {

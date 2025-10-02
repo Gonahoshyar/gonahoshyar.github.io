@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vuepress dev docs -p 3000",
     "build": "vuepress build docs",
-    "deploy": "vuepress build docs && gh-pages -d docs/.vuepress/dist -b gh-pages -f"
+    "deploy": "npm run build && cd docs/.vuepress/dist && git init && git add -A && git commit -m 'deploy' && git push -f https://github.com/Gonahoshyar/PortfolioTest.git HEAD:gh-pages && cd ../../.."
   },
   "keywords": [],
   "author": "",
