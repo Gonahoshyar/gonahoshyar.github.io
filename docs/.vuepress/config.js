@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/gonahoshyar.github.io/',
+  base: '/',// <--- must be root for user page
   title: 'My Portfolio',
   description: 'My VuePress Portfolio Site',
   themeConfig: {
