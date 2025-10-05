@@ -1,6 +1,5 @@
 # Project 1: Portfolio Website
 
-This is my first project.  
 
 - Built with VuePress  
 - Features: Home, Projects, Contact pages  

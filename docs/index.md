@@ -1,8 +1,7 @@
 ---
 home: true
 heroImage: /MyPic.jpg
-heroText: 👋 Hi, I'm Gona
-tagline: Passionate Web Developer & Tech Enthusiast 💻✨
+tagline: Passionate Web Developer & Tech Enthusiast 
 ---
 
 <div class="intro-section">
@@ -13,27 +12,31 @@ tagline: Passionate Web Developer & Tech Enthusiast 💻✨
 I am gona from salahadin university, final year student.
 I’m passionate about <strong>technology</strong> and <strong>web development</strong>.  
 I enjoy building <strong>interactive</strong> and <strong>user-friendly</strong> projects,  
-learning new tools, and turning ideas into real-world applications 🌍.
+learning new tools, and turning ideas into real-world applications .
 </p>
 
-<a class="btn btn-secondary" href="/contact.html">📬 Contact Me</a>
+<a class="btn btn-secondary" href="/contact.html"> Contact Me</a>
 
 </div>
 
 <h2 class="section-title"> Skills & Interests</h2>
 
-<ul class="skills-list">
-  <li><span class="category">Frontend:</span> HTML, CSS, JavaScript, Vue</li>
-  <li><span class="category">Backend:</span> Node.js, Express</li>
-  <li><span class="category">Tools:</span> Git, VS Code</li>
-  <li><span class="category">Passions:</span> Problem Solving, Programming Languages, Learning</li>
-</ul>
+<div class="skills-container">
+  <ul class="skills-list">
+    <li><span class="category">Frontend:</span> HTML, CSS, JavaScript, Vue</li>
+    <li><span class="category">Backend:</span> Node.js, Express</li>
+    <li><span class="category">Tools:</span> Git, VS Code</li>
+    <li><span class="category">Passions:</span> Problem Solving, Programming Languages, Learning</li>
+  </ul>
+</div>
+
 
 <h2 class="section-title">My CV</h2>
 
 <img src="/myCV.png" class="cv-pic" alt="My CV">
 
 <style>
+
 .intro-section {
   text-align: center;
   margin-top: 40px;
@@ -74,15 +77,17 @@ learning new tools, and turning ideas into real-world applications 🌍.
 }
 
 .skills-list {
-  list-style-type: disc; /* black bullet */
-  margin-left: 30px; /* indent the list */
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto;
+  list-style-type: disc;
+  list-style-position: inside;
   font-size: 18px;
-  line-height: 1.8;
+}
+div.skills-container {
+  text-align: center;
 }
 
-.skills-list li {
-  margin: 8px 0;
-}
 
 .category {
   font-weight: bold;
@@ -94,5 +99,12 @@ learning new tools, and turning ideas into real-world applications 🌍.
   display: block;
   margin: 20px auto;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-pic:hover {
+  transform: scale(1.03); /* slight zoom */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* deeper shadow */
 }
 </style>
